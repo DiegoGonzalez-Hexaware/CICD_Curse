@@ -6,12 +6,19 @@
   "scripts": {
     "build": "npm run test && tsc",
     "build2": "npm run test:coverage && tsc",
-    "test": "cd src && jest --"
+    "test": "cd src && jest --",
+    "test:coverage": "jest --coverage --watchAll=false"
   },
   "author": "Blad",
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^29.2.0",
+    "@typescript-eslint/eslint-plugin": "^5.42.0",
+    "eslint": "^8.26.0",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.4.0",
+    "eslint-plugin-promise": "^6.1.1",
     "ts-jest": "^29.0.3",
     "typescript": "^4.8.4"
   },
